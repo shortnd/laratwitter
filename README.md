@@ -24,6 +24,6 @@ php artisan migrate
 This is still a work in progress and really just here to help me get better understanding of both Vue and Laravel before I make a bigger application
 
 ### My Links
-Portfolio: shortnd.design[http://shortnd.design]
-Linkedin: Linkedin[https://www.linkedin.com/in/collin-o-connell-40a230132/]
+Portfolio: [shortnd.design](http://shortnd.design "My Portfolio")
+Linkedin: [Linkedin](https://www.linkedin.com/in/collin-o-connell-40a230132/ "My LinkedIn Profile")
 
