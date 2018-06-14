@@ -25,5 +25,6 @@ This is still a work in progress and really just here to help me get better unde
 
 ### My Links
 Portfolio: [shortnd.design](http://shortnd.design "My Portfolio")
+
 Linkedin: [Linkedin](https://www.linkedin.com/in/collin-o-connell-40a230132/ "My LinkedIn Profile")
 
