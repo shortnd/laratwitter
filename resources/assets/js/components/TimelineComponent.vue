@@ -1,11 +1,11 @@
 <template>
     <div class="col-md-8 posts">
-        <p v-if="!post.length">No posts</p>
-        <div class="media" v-for="post in posts" :key="post.id">
+        <p v-if="!!posts.length">No posts</p>
+        <div v-else class="media" v-for="post in posts" :key="post.id">
             <img class="mr-3" />
             <div class="media-body">
                 <div class="mt-3">
-                    <a href="#">{{ post.user.name }}</a>
+                    <a href="#">{{ post.user.name }}</a> | {{ post.createdDate }}
                 </div>
                 <p>{{ post.body }}</p>
             </div>
@@ -24,7 +24,7 @@ export default {
         }
     },
     mounted() {
-        Event.$on('added_tweet', post => {
+        Event.$on('added_tweet', (post) => {
             this.posts.unshift(post);
         });
     }
