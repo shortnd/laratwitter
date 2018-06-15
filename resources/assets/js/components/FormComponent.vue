@@ -2,10 +2,10 @@
     <div class="col-md-4">
         <form @submit.prevent="saveTweet">
             <div class="form-group">
-                <textarea 
+                <textarea
                 class="form-control"
-                cols="8" rows="8" 
-                v-model="body" 
+                cols="8" rows="8"
+                v-model="body"
                 required></textarea>
             </div><!--/.form-group-->
             <div class="form-group">
@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         saveTweet() {
-            axios.post('/tweet/save', {body: this.body}).then(res => {
+            axios.post('tweet/save', {body: this.body}).then(res => {
                 console.log(res.data);
             }).catch(e => {
                 console.log(e);
