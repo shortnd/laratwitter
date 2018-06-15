@@ -47909,24 +47909,24 @@ var render = function() {
     "div",
     { staticClass: "col-md-8 posts" },
     [
-      !_vm.post.length ? _c("p", [_vm._v("No posts")]) : _vm._e(),
-      _vm._v(" "),
-      _vm._l(_vm.posts, function(post) {
-        return _c("div", { key: post.id, staticClass: "media" }, [
-          _c("img", { staticClass: "mr-3" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "media-body" }, [
-            _c("div", { staticClass: "mt-3" }, [
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(_vm._s(post.user.name))
-              ]),
-              _vm._v(" | " + _vm._s(post.createdDate) + "\n            ")
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(post.body))])
-          ])
-        ])
-      })
+      !_vm.posts.length
+        ? _c("p", [_vm._v("No posts")])
+        : _vm._l(_vm.posts, function(post) {
+            return _c("div", { key: post.id, staticClass: "media" }, [
+              _c("img", { staticClass: "mr-3" }),
+              _vm._v(" "),
+              _c("div", { staticClass: "media-body" }, [
+                _c("div", { staticClass: "mt-3" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(_vm._s(post.user.name))
+                  ]),
+                  _vm._v(" | " + _vm._s(post.createdDate) + "\n            ")
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(post.body))])
+              ])
+            ])
+          })
     ],
     2
   )

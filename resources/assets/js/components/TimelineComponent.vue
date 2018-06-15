@@ -1,6 +1,6 @@
 <template>
     <div class="col-md-8 posts">
-        <p v-if="!!posts.length">No posts</p>
+        <p v-if="!posts.length">No posts</p>
         <div v-else class="media" v-for="post in posts" :key="post.id">
             <img class="mr-3" />
             <div class="media-body">
